@@ -44,7 +44,16 @@
 
 /* Nav Bar Styles */
 .navMenu {
-    background-color: var(--backgroundcolor);
+    background-color: var(--backgroundcolor) !important;
+
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navMenu a {
+    color: black !important;
 }
 
 .firstName {
@@ -85,13 +94,14 @@ nav a {
     bottom: 0px;
     left: 0px;
     background-color: var(--fontColor);
-    opacity: 40%;
+    opacity: 30%;
 }
 
 .heroTitle {
     position: absolute;
     color: var(--fontColor);
     text-align: center;
+
 }
 
 .heroTitle h1 span {
@@ -203,11 +213,11 @@ nav a {
 }
 
 .projects .project:first-child {
-    height: 400px;
+    max-height: fit-content;
 }
 
 .projects .project:last-child {
-    height: 400px;
+    height: 480px;
 }
 
 .projectBTN a {
@@ -304,7 +314,7 @@ nav a {
 
 /* Start Projects page Styles */
 .projectPage {
-    min-height: 120vh;
+    min-height: 160vh;
     background-color: var(--thirdcolor);
 }
 
